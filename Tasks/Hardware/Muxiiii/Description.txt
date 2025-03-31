@@ -1,0 +1,4 @@
+I execute this prog with those sel values 
+[100, 101, 001, 010, 111, 000, 011, 110] 
+And i get this output 
+Can you help me to decrypt it to get the Flag
