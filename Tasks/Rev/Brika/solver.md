@@ -1,8 +1,8 @@
-![image](https://github.com/user-attachments/assets/8c059acb-cf45-45b1-8e8d-733b8ba40d51)
+![image](https://github.com/user-attachments/assets/5a18c7f0-0d81-469a-ba70-2b83120bf96b)
 
 First we should start our static analysis , i used JADX to decompile the apk and analyse the source code 
 
-![image](https://github.com/user-attachments/assets/bbd66f3a-6a47-4abc-994e-955ed32c7b20)
+![image](https://github.com/user-attachments/assets/1621d49a-9144-4838-a287-db33d49c6f59)
 
 We found that there is a check function on the hash of the secret string,
 
@@ -11,7 +11,7 @@ We found that there is a check function on the hash of the secret string,
 ```
 so we should carck it
 
-![image](https://github.com/user-attachments/assets/c2c28cd1-bfef-4a9b-b598-12178530a8ea)
+![image](https://github.com/user-attachments/assets/52ca91c5-2053-4816-adbf-5f2711df9637)
 
 the secret string was not found 
 
@@ -21,13 +21,13 @@ First,
 
 we should use apk tool to build this app 
 
-![image](https://github.com/user-attachments/assets/aac93491-5e22-4cfc-b431-ede3b2e90068)
+![image](https://github.com/user-attachments/assets/b503427f-c677-4f24-a5d1-ea2872249512)
 
 Now we should patch it 
 
-![image](https://github.com/user-attachments/assets/ded652aa-4818-4eec-b2a8-beb1fb1a3b47)
+![image](https://github.com/user-attachments/assets/9f3ed978-d207-4975-88d2-e5823a0fd17c)
 
-![image](https://github.com/user-attachments/assets/7cb92774-e1bd-4d98-bb28-210cb2f7d061)
+![image](https://github.com/user-attachments/assets/81be7f05-1df6-4124-ad55-b3c083d421fe)
 
 In smali code 
 
@@ -37,19 +37,19 @@ if-nez = if not
 ```
 Now we should rebuild the apk 
 
-![image](https://github.com/user-attachments/assets/dab21f80-8bd0-46b8-b62f-b2e8902d032f)
+![image](https://github.com/user-attachments/assets/ad8c9fb6-c898-40ec-ae00-c30c7bd02a18)
 
 After that we should sign it 
 
-![image](https://github.com/user-attachments/assets/a55337d2-8902-4a8a-8f08-d244dad14688)
+![image](https://github.com/user-attachments/assets/59aa157f-46a9-4aae-a7a8-2869aa1b1602)
 
 Finaly the code source was modified 
 
-![image](https://github.com/user-attachments/assets/2e7960a0-d15f-421c-9185-1ce15f023e5b)
+![image](https://github.com/user-attachments/assets/d36e7dcc-b665-4866-a20b-593303ae4268)
 
 So we will put a random string 
 
-![image](https://github.com/user-attachments/assets/c5757079-74ff-4b89-9ea9-0d5173c683db)
+![image](https://github.com/user-attachments/assets/5532a0eb-fe99-4ce4-9381-18fe36850f10)
 
 
 Pwned !!!!!!
