@@ -4,7 +4,8 @@
 
 After analyzing the infrastructure:
 
-![Infra Overview](https://github.com/user-attachments/assets/93f81624-9f41-46a3-b81a-984805bde414)
+![image](https://github.com/user-attachments/assets/03791327-77a1-444b-adec-d80c4991e985)
+
 
 We identified the following components:
 - **1 Router**
@@ -19,7 +20,7 @@ We identified the following components:
 
 Our first step is to check `Spark.com` from a random host’s browser.
 
-![Browser Check](https://github.com/user-attachments/assets/e46cb9b9-9c6d-4437-8a9c-2afadaf90a5b)
+![image](https://github.com/user-attachments/assets/7de58bcf-8298-4d22-857e-79653069a22d)
 
 
 We discovered an important message:
@@ -31,7 +32,8 @@ This indicates that we need to locate a Python file.
 
 Since an FTP server is available, we should check it first.
 
-![FTP Access Denied](https://github.com/user-attachments/assets/fd5ff749-8da7-414b-8c91-09b9f4bcff76)
+![image](https://github.com/user-attachments/assets/6d056361-4d22-476b-a522-624251e5a47c)
+
 
 We attempted to connect to the FTP server from the Agent's host but were denied access.
 
@@ -39,17 +41,20 @@ We attempted to connect to the FTP server from the Agent's host but were denied 
 
 There is a **Hint** button on the webpage, so we should explore it.
 
-![Hint Button](https://github.com/user-attachments/assets/f0e8a497-395f-4387-af7f-5043d7d27afb)
+![image](https://github.com/user-attachments/assets/006c0a52-fa3c-48bd-b47e-4f2a271900b8)
+
 
 The hint reveals that **only one host** can connect to the FTP server.
 
 ### Identifying the Allowed Host
 
-![Suspicious Section](https://github.com/user-attachments/assets/a7f24365-07fd-4e96-8041-66aab593e75a)
+![image](https://github.com/user-attachments/assets/744386f5-d45d-4401-be79-5ae898f927e1)
+
 
 This section looks suspicious, so we attempt the FTP connection from the **CEO’s host**.
 
-![FTP Connection Success](https://github.com/user-attachments/assets/0598cc71-7483-4a37-910a-c77fdb29ded6)
+![image](https://github.com/user-attachments/assets/6256a53e-befe-4113-bff1-6168b2c46337)
+
 
 Success! We are now connected to the FTP server.
 
@@ -59,13 +64,15 @@ After reading the task description, we found a hint stating that:
 - **Username:** `spark`
 - **Password:** `spark`
 
-![Login Credentials](https://github.com/user-attachments/assets/f93c818e-e8d2-4f7e-887b-9051156ec1fb)
+![image](https://github.com/user-attachments/assets/150fbaa0-6b00-4533-8f5b-f34b1abc1616)
+
 
 ### Listing Available Files
 
 Now, we list the files on the FTP server.
 
-![File List](https://github.com/user-attachments/assets/581d42fd-eb87-4b6d-89b6-1f2ca7f36ae9)
+![image](https://github.com/user-attachments/assets/40a771b9-6e46-45b5-8d05-a55f2c6246fb)
+
 
 We found the Python file: **`flag.py`**.
 
@@ -73,7 +80,8 @@ We found the Python file: **`flag.py`**.
 
 We download and execute `flag.py` to get the final flag.
 
-![Flag Retrieved](https://github.com/user-attachments/assets/d3a9c99f-f61e-4d77-b080-a88bcb120a8b)
+![image](https://github.com/user-attachments/assets/1a2bff4a-9a8a-4077-8d94-867bc29a9be9)
+
 
 ### Conclusion
 
