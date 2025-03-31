@@ -1,17 +1,17 @@
 
-![image](https://github.com/user-attachments/assets/e4c16452-39f1-47f1-b427-a1cb496f8622)
+![image](https://github.com/user-attachments/assets/e607985f-f970-4fe7-8167-d133a2c1d270)
 
 First we should do our Static analysis 
 
 i used JADX to decompile the APK file 
 
-![image](https://github.com/user-attachments/assets/2d9c2db2-077b-416a-9bf8-e09222214b4a)
+![image](https://github.com/user-attachments/assets/9a80cc80-4ecc-4abc-8854-98c37b1f2848)
 
 we found that there is a check on the username : it should be equal to 1DH4M
 
 and there is a nativ function that check the PIN loaded from a native-lib called "loggie"
 
-![image](https://github.com/user-attachments/assets/35014265-a9a2-4b2e-bf31-9fb0e29bd622)
+![image](https://github.com/user-attachments/assets/2fee4476-972e-4899-b9de-37944936d7d0)
 
 So i used apktool then ida to analyse the native-lib
 
@@ -246,11 +246,11 @@ The valid Pin is : 8652
 1DH4M:8652
 ```
 
-![image](https://github.com/user-attachments/assets/cbafe94e-f1f0-4399-978f-59d013fd89e7)
+![image](https://github.com/user-attachments/assets/2cd74d80-44cc-4cad-abfa-7e9669505794)
 
 Now we should use `adb logcat` to read logs 
 
-![Capture d'écran 2025-03-04 130207](https://github.com/user-attachments/assets/54425e53-0ac8-4875-9d8c-09f16de1db3a)
+![image](https://github.com/user-attachments/assets/edf68bd5-db16-4151-af0f-0afbf7d9b7bd)
 
 we found it 
 
